@@ -16,7 +16,8 @@ class Accounts {
     Accounts tempAccounts = accounts;
     List<Account> _accounts = tempAccounts.accounts
         .where((a) =>
-            (a.fullName.toLowerCase().contains(filterString.toLowerCase())))
+            (a.fullName.toLowerCase().contains(filterString.toLowerCase())) ||
+            (a.gender.toLowerCase() == (filterString.toLowerCase())))
         .toList();
     accounts.accounts = _accounts;
     return accounts;

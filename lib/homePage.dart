@@ -1,4 +1,3 @@
-import 'package:cars/models/account.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'services.dart';
@@ -60,29 +59,30 @@ class _MyHomePageState extends State<MyHomePage> {
     return Card(
       child: Padding(
         padding: EdgeInsets.all(10.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              accounts.accounts[index].fullName,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 16,
+        child: ListTile(
+          leading: CircleAvatar(
+             radius: 30,
+              child: Padding(
+            padding: const EdgeInsets.all(10),
+             child: FittedBox(
+            child: Image.asset(accounts.accounts[index].avatar),
+          ),
               ),
+          ),
+          title: Text(
+            accounts.accounts[index].fullName,
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 16,
             ),
-            SizedBox(
-              height: 5.0,
+          ),
+          subtitle: Text(
+            accounts.accounts[index].gender,
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 14,
             ),
-            Text(
-              accounts.accounts[index].gender,
-              style: TextStyle(
-                color: Colors.grey,
-                fontSize: 14,
-              ),
-            ),
-          
-          ],
+          ),
         ),
       ),
     );
