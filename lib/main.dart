@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:http/http.dart';
-import 'package:csv/csv.dart';
+// import 'package:http/http.dart';
+// import 'package:csv/csv.dart';
 
 import './homePage.dart';
 
@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Cars App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
