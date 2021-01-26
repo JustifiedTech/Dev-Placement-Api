@@ -16,4 +16,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Link to demo file
-- Click to access the demo file to this app (https://drive.google.com/file/d/14m1eOXqJbrKH3RZ5i2epO7RywoUBdCOl/view?usp=sharing)
+- Click to access the demo file to this app (https://drive.google.com/file/d/14m1eOXqJbrKH3RZ5i2epO7RywoUBdCOl/view?usp=drivesdk)
